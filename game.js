@@ -32,7 +32,7 @@ var lives = 4;
 // Iteration 2: Write a function to make a zombie
 function makeZombie() {
     randomeImage = img[getRandomInt(0,img.length)];
-    gameBody.innerHTML += `<img src= "./assets/${randomeImage}" class="zombie-image" id="zombie${zombieId}">`
+    gameBody.innerHTML += `<img src= "./assets/${randomeImage}" class="zombie-image" id="zombie${zombieId}" draggable="false">`
     
     let zombie = document.querySelector(`#zombie${zombieId}`);
     zombie.style.transform = `translateX(${getRandomInt(20,80)}vw)`;
