@@ -12,18 +12,18 @@ const img = [
     "zombie-5.png"
 ]
 // Iteration 1.2: Add shotgun sound
-// const expAudio = new Audio("./assets/shotgun.wav");
-// expAudio.volume = 0.2;
-// gameBody.onclick = () => {
-//     expAudio.pause();
-//     expAudio.currentTime = 0;
-//     expAudio.play();
-// }
+const expAudio = new Audio("./assets/shotgun.wav");
+expAudio.volume = 0.2;
+gameBody.onclick = () => {
+    expAudio.pause();
+    expAudio.currentTime = 0;
+    expAudio.play();
+}
 
 // Iteration 1.3: Add background sound
-// const backgroundSound = new Audio("./assets/bgm.mp3");
-// backgroundSound.play()
-// backgroundSound.loop = true;
+const backgroundSound = new Audio("./assets/bgm.mp3");
+backgroundSound.play()
+backgroundSound.loop = true;
 
 // Iteration 1.4: Add lives
 const maxlives = 4;
